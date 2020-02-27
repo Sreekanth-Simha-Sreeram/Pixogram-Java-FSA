@@ -14,8 +14,10 @@ import com.pixogram.models.Followers;
 import com.pixogram.models.LogActivities;
 import com.pixogram.models.User;
 
+import com.pixogram.services.UserService;
+
 @Component
-@Service ("projectService")
+@Service ("UserService")
 public class UserServiceImpl implements UserService {
 
 	
