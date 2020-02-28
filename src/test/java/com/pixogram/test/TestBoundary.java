@@ -1,6 +1,7 @@
 package com.pixogram.test;
 
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertEquals;
+
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
@@ -23,7 +24,7 @@ public class TestBoundary {
 
 
 	        int passwordLength=10;
-	assertNotEquals(passwordLength,user.getUserPassword().length());
+	assertEquals(passwordLength,user.getUserPassword().length());
 
 
 	    }

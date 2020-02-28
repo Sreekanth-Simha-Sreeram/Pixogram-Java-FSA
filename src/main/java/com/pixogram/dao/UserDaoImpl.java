@@ -2,6 +2,7 @@ package com.pixogram.dao;
 
 import java.util.List;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -14,11 +15,11 @@ import com.pixogram.models.LogActivities;
 import com.pixogram.models.User;
 
 @Component
-@Service ("UserDao")
+
 public class UserDaoImpl implements UserDao {
 	
 	@Autowired
-
+	SessionFactory sessionfactory;
 	@Transactional
 	public boolean register(User user) {
 		// TODO Auto-generated method stub

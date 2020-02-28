@@ -61,6 +61,7 @@ public class TestFunctional {
 	
 	}
 	
+	@Test
 	public void testGetProfile() {
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("Stock-application.xml");
 		User user = new User();
@@ -77,7 +78,7 @@ public class TestFunctional {
 		assertEquals(user,userfromdb);
 	}
 	
-	
+	@Test
 	public void testDeleteProfile() {
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("pixogram-application.xml");
 		User user = new User();
@@ -182,6 +183,7 @@ Content content = new Content();
 
 	}
 	
+	@Test
 	public void testGetUser() {
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("Stock-application.xml");
 		User user = new User();
