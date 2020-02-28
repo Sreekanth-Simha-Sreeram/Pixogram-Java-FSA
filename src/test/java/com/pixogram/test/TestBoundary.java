@@ -23,7 +23,7 @@ public class TestBoundary {
 
 
 	        int passwordLength=10;
-	assertNotEquals(passwordLength,user.getUserPassword().length());
+	assertEquals(passwordLength,user.getUserPassword().length());
 
 
 	    }
